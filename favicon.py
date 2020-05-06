@@ -1,6 +1,8 @@
 import mmh3
 import requests
 import sys
+import urllib3
+urllib3.disable_warnings()
 
 
 if len(sys.argv) < 2:
