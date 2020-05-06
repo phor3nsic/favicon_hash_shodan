@@ -4,7 +4,7 @@
 
 ```
 git clone https://github.com/phor3nsic/favicon_hash_shodan.git
-cd favicon_hash_shoda
+cd favicon_hash_shodan
 pip2 install -r requirements.txt
 python2 favicon.py http://server/favicon.ico
 ```
