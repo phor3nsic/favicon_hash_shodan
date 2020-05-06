@@ -1,4 +1,4 @@
-# Search for a framwork by favicon
+# Search for a framework by favicon
 
 ## Usage
 
