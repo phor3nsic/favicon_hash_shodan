@@ -11,6 +11,7 @@ if len(sys.argv) < 2:
 
 url = sys.argv[1]
 req = requests.get(url, verify=False)
-favicon = req.content.encode('base64')
-hash = mmh3.hash(favicon)
-print("http.favicon.hash:"+str(hash))
+result = req.content.encode('base64')
+favicon= str(mmh3.hash(result))
+print("[!]http.favicon.hash:"+favicon)
+print("[*]View Results:\nhttps://www.shodan.io/search?query=http.favicon.hash%3A"+favicon)
