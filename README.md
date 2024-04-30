@@ -1,22 +1,34 @@
 # Search for a framework by favicon
 
-> [i] Get all hosts with the same favicon!
+__Get all hosts with the same favicon!__
 
+### Install
 
-## Usage
-
-```
-➜ git clone https://github.com/phor3nsic/favicon_hash_shodan.git
-➜ cd favicon_hash_shodan
-➜ pip3 install -r requirements.txt
-
-➜  favicon_hash_shodan: python3 favicon.py https://hackerone.com/favicon.ico
-[!] http.favicon.hash:595148549
-[*] View Results:
-> https://www.shodan.io/search?query=http.favicon.hash%3A595148549
-
+```bash
+pipx install git+https://github.com/phor3nsic/favicon_hash_shodan.git
 ```
 
-- Search in Shodan:
+### Usage
+
+#### Simple use:
+```bash
+favhash -u https://github.com/favicon.ico
+```
+
+> Example to https://github.com/favicon.ico
+```bash
+~$ favhash -u https://hackerone.com/favicon.ico
+[+] http.favicon.hash:1848946384
+[+] View Results:> 
+https://www.shodan.io/search?query=http.favicon.hash%3A1848946384
+```
+
+#### [Uncover](https://github.com/projectdiscovery/uncover) mode
+
+```bash
+favhash -u https://github.com/favicon.ico --uncover
+```
+
+### Search example
 
 [/search?query=http.favicon.hash:3A595148549](https://www.shodan.io/search?query=http.favicon.hash%3A595148549)
