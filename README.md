@@ -32,3 +32,5 @@ favhash -u https://github.com/favicon.ico --uncover
 ### Search example
 
 [/search?query=http.favicon.hash:3A595148549](https://www.shodan.io/search?query=http.favicon.hash%3A595148549)
+
+<a href="https://www.buymeacoffee.com/phor3nsic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
