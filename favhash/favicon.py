@@ -12,7 +12,7 @@ def main():
 	parser.add_argument('--uncover', action='store_true', help='Uncover output mode github.com/projectdiscovery/uncover')
 	arg = parser.parse_args()
 
-	response = requests.get(arg.url, verify=False)
+	response = requests.get(arg.url, verify=False, timeout=30)
 	favicon = codecs.encode(response.content,"base64")
 	hash_favicon = mmh3.hash(favicon)
 	
